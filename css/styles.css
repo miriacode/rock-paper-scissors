@@ -1,0 +1,122 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    width:100vw;
+    height: 100vh;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 1rem;
+    background: linear-gradient(to bottom, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+    color:hsl(0, 0%, 100%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;  
+}
+
+.header{
+    width:83vw;
+    height:24vw;
+    border: solid hsl(217, 16%, 45%) 0.15rem;
+    border-radius: 0.35rem;
+
+    margin-top:7vw;
+    margin-left:auto;
+    margin-right:auto;
+    
+    justify-content:space-between;
+    align-items: center;
+    padding-right: 2.5vw;
+    
+}
+.title{
+    width:30%;
+    font-size:1.2rem;
+    text-transform: uppercase;
+    line-height:0.9rem;
+    padding:6.5%;
+}
+
+.score{
+    width:20vw;
+    height: 80%;
+    background-color: white;
+    border-radius: 0.33rem;
+    padding: 4% 8%;
+    
+}
+
+.score__label{
+    text-transform: uppercase;
+    letter-spacing: 0.09rem;
+    font-size:0.5rem;
+    font-weight: 700;
+    color:hsl(229, 64%, 46%);
+}
+
+.score__number{
+   color:hsl(229, 25%, 31%); 
+   font-size:2.2rem;
+   font-weight: 700;
+   margin-top: -0.9vw; 
+}
+
+.main{
+    width:100vw;
+    height:54vh;
+}
+
+.new-game{
+    width:100%;
+    height:100%;
+}
+
+.new-game__triangle{
+    width:100%;
+    height: 100%;
+    /* background-color:blue; */
+}
+
+.hands{
+    position:absolute;
+    top:53vw;
+    /* left:auto;
+    right:auto; */
+    width:85%;
+    height: 30%;
+    /* margin-left: auto;
+    margin-right: auto; */
+    /* background-color: aqua; */
+    border: 2px solid red;
+}
+
+.footer{
+    width:100vw;
+    height: 10vw;
+}
+
+.rules{
+    height: 100%;
+    width: 32%;
+    border:none;
+    background-color: transparent;
+    color:hsl(0, 0%, 100%);
+    font-size: 0.95rem;
+    font-family:'Barlow Semi Condensed', sans-serif ;
+    border-radius: 0.4rem;
+    border: 0.015rem solid hsl(0, 0%, 90%);
+    
+
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    
+}
