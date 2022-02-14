@@ -87,7 +87,7 @@ body{
 
 .hands{
     position:absolute;
-    top:58vw;
+    top:60vw;
     width:88%;
     height:40%;
 }
@@ -99,33 +99,103 @@ body{
     border-radius: 50%;
 }
 
-.paper, .scissors, .rock{
+.new-game__paper, .new-game__scissors, .new-game__rock{
     position:absolute;
 }
 
-.paper{
+.new-game__paper{
     left:9.5vw;
     outline: 0.8rem solid hsl(230, 89%, 65%);
     /* offset-x | offset-y | blur-radius | spread-radius | color */
     box-shadow: 0rem 0.45rem 0rem 0.75rem hsl(229, 66%, 46%);
 }
 
-.scissors{
+.new-game__scissors{
     right:9.5vw;
     outline: 0.8rem solid hsl(40, 84%, 53%);
     box-shadow: 0rem 0.45rem 0rem 0.75rem hsl(29, 76%, 44%);
 }
 
-.rock{
-    bottom:16%;
+.new-game__rock{
+    bottom:14vw;
     left:31.5vw;
     outline: 0.95rem solid  hsl(349, 70%, 56%);
     box-shadow: 0rem 0.45rem 0rem 0.75rem hsl(347, 75%, 35%);
 }
 
+.shadow{
+    width:24vw;
+    height:24vw;
+    background-color: hsl(220, 46%, 19%);
+    border-radius: 50%;
+    /* border:2px solid red; */
+}
+
+.caption{
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    
+}
+
+
+/* Second page */
+.grid{
+    display: grid;
+    background-color: green;
+    /* grid-template-rows: repeat(2,1fr); */
+    grid-template-columns: repeat(2,1fr);
+
+    justify-items: center;
+    row-gap:8vw;
+
+    width:400px;
+}
+
+.rock{
+    outline: 0.95rem solid  hsl(349, 70%, 56%);
+    box-shadow: 0rem 0.45rem 0rem 0.75rem hsl(347, 75%, 35%);
+}
+
+.outcome{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width:100%;
+    background-color: aqua;
+
+}
+
+.outcome__caption{
+    font-size: 3.1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.button__play-again{
+    width:53vw;
+    height: 12vw;
+    margin-top:3.2vw;
+    border-radius: 0.35rem;;
+    border:none;
+    outline:none;
+    background-color: aliceblue;
+    font-size: 0.9rem;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    color:hsl(231, 18%, 38%);
+}
+
+
 .footer{
     width:100vw;
     height: 10vw;
+}
+
+.hide{
+    display:none;
 }
 
 .rules{
@@ -143,4 +213,44 @@ body{
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     
+}
+
+.none{
+    display:none;
+}
+
+
+
+/* Rules Template */
+.rules-section{
+    width:100vw;
+    height: 182vw;
+    background-color: hsl(0, 0%, 100%);
+
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.rules-section__title{
+    width:100vw;
+    height:58vw;
+    background-color: pink;
+
+    text-transform: uppercase;
+    font-size: 2.15rem;
+    font-weight: 700;
+    color:hsl(227, 24%, 34%);
+
+    
+}
+/* .rules-section__image{
+
+} */
+.rules-section__cross{
+    width:100vw;
+    height:20vw;
+    padding-left: auto;
+    padding-right:auto;
+    background-color: pink;
 }
