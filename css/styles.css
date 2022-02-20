@@ -244,13 +244,10 @@ body{
 
     
 }
-/* .rules-section__image{
 
-} */
 .rules-section__cross{
     width:100vw;
     height:20vw;
-    padding-left: auto;
-    padding-right:auto;
+    
     background-color: pink;
 }
